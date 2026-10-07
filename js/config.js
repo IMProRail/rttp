@@ -1,61 +1,67 @@
-let respecConfig = {
+import { loadRespecWithConfiguration } from "https://improrail.github.io/respec-assets/js/prorail-config.mjs";
+
+loadRespecWithConfiguration({
   preProcess: [window.respecMermaid.createFigures],
   useLogo: true,
   useLabel: true,
-
-  // TODO: title is verplicht! Neem hieronder de titel van het document op
+  
+  //-- TODO titel is verplicht.
   title: "CIM RTTP",
-  //-- specStatus is verplicht! (activeer 1 van de volgende)
-  specStatus: "wv",                 // Werkversie
-  //specStatus: "cv",               // Consultatieversie
-  //specStatus: "vv",               // Versie ter vaststelling
-  //specStatus: "def",              // Vastgestelde versie
-  //specStatus: "basis",            // Basis Document
-
-  //-- specType is verplicht bij alle andere dan BASIS
-  //specType: "NO",                 // Norm
-  //specType: "ST",                 // Standaard
-  specType: "IM",                 // Informatie Model
-  //specType: "PR",                 // Praktijkrichtlijn
-  //specType: "HR",                   // HandReiking
-  //specType: "WA",                 // Werkafspraak
-  //specType: "BD",                 // Beheer Documentatie
-  //specType: "AL",                 // Algemeen document
-  //specType: "BP",                 // Best Practice
-
-  //-- pubDomain is verplicht! (komt in de URL)
-  //-- zie: https://geonovum.github.io/handleiding-tooling/ReSpec/#pubdomain
-  //-- TODO: vul pubDomain in
-  pubDomain: "rttp",
-
-  //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
-  //license: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
-  //license: "cc0",                 // Public Domain Dedication
-  license: "cc-by",                 // Attribution, met bronvermelding
 
   //-- TODO shortName is verplicht! (komt in de URL: kies logische afkorting)
   //-- Regel: shortName mag geen hoofdletters bevatten.
   shortName: "rttp",
+  pubDomain: "rttp",
+
+  //-- TODO licentie is verplicht
+  //-- "cc0" Creative Commons 0 Public Domain Dedication
+  //-- "cc-by" Creative Commons Attribution 4.0 International Public License
+  //-- "cc-by-nd" Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal
+  license: "cc-by",
   
+  //-- TODO status van het document is verplicht
+  //-- wv: "Werkversie",
+  //-- cv: "Consultatieversie",
+  //-- vv: "Versie ter vaststelling",
+  //-- def: "Vastgestelde versie",
+  //-- ld: "Levend document",
+  //-- //eo: "Verouderde versie",
+  //-- //tg: "Teruggetrokken versie",
+  specStatus: "wv",
+
+  //-- TODO type van het document is verplicht
+  //-- basis: "Document",
+  //-- no: "Norm",
+  //-- st: "Standaard",
+  //-- im: "Informatiemodel",
+  //-- pr: "Praktijkrichtlijn",
+  //-- hr: "Handreiking",
+  //-- wa: "Werkafspraak",
+  //-- al: "Algemeen",
+  //-- bd: "Beheerdocumentatie",
+  //-- bp: "Best practice",
+  specType: "im",
+    
   //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden. 
-	//edDraftURI: ["https://geonovum.github.io", "/", "shortName"],
+	//edDraftURI: ["https://improrail.github.io", "/", "shortName"],
 
   //-- publishDate is verplicht. Als je werkversie gekozen hebt  dan pakt Respec
   //-- de pushdate maar de publishDate is nog steeds verplicht.
-  publishDate: "2026-07-10",
-  
+  publishDate: "2026-07-10", 
+
   //-- publishVersion is verplicht. Hij mag wel leeg zijn [], maar niet de lege string zijn "".
+  //publishVersion: "0.0.1",
   publishVersion: [],
+
  
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beide aan/uit! 
   previousPublishDate: "2026-07-10",
   previousMaturity: "CV",
-
-  //-- Deze gebruiken we niet binnen Geonovum
   //prevVersion: "0.0.1",
 
   //-- TODO: de namen van de Editor(s) / Redacteur(en)
-  //-- vul in: per Editor: name:, company:, companyURL:
+  //-- vul in: per Editor: name:, company:, companyURL: 
+  //-- companyURL moet beginnen met https://
   editors:
     [
       {
@@ -83,18 +89,17 @@ let respecConfig = {
   // Create PDF and link to file in header (optional):
   // TODO: Change the filename as preferred.
   //alternateFormats: [
-  //    {
-  //        label: "pdf",
-  //        uri: "static/template.pdf",
-  //    },
-  //],
+   //   {
+   //       label: "pdf",
+   //       uri: "static/template.pdf",
+   //   },
+  // ],
 
   //
   // Lokale lijst voor bibliografie
   // - Kijk eerst naar de beschikbare www.specref.org .
-  // - Kijk daarna in de organisatieconfig op: https://tools.geostandaarden.nl/specref/
+  // - Kijk daarna in de organisatieconfig op
   // - Voeg dan pas hieronder toe.
-  // - Zie handleiding: https://geonovum.github.io/handleiding-tooling/ReSpec/ReSpec-onderdelen/#bibliografie
   //
   localBiblio: 
   {
@@ -107,5 +112,5 @@ let respecConfig = {
       date: "2024-06-13"
     }
   }
- 
-};
+
+});
