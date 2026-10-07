@@ -8,6 +8,10 @@ loadRespecWithConfiguration({
   //-- TODO titel is verplicht.
   title: "CIM RTTP",
 
+  // TODO: Vul de github URL in.
+  //neem hier de URL van de github repository op waar het respec document in staat
+  github: "https://github.com/IMProRail/rttp",
+
   //-- TODO shortName is verplicht! (komt in de URL: kies logische afkorting)
   //-- Regel: shortName mag geen hoofdletters bevatten.
   shortName: "rttp",
@@ -52,7 +56,6 @@ loadRespecWithConfiguration({
   //-- publishVersion is verplicht. Hij mag wel leeg zijn [], maar niet de lege string zijn "".
   //publishVersion: "0.0.1",
   publishVersion: [],
-
  
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beide aan/uit! 
   previousPublishDate: "2026-07-10",
@@ -82,9 +85,7 @@ loadRespecWithConfiguration({
       }
     ],
 
-  // TODO: Vul de github URL in.
-  //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/IMProRail/rttp",
+
 
   // Create PDF and link to file in header (optional):
   // TODO: Change the filename as preferred.
