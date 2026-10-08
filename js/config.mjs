@@ -83,7 +83,7 @@ loadRespecWithConfiguration({
         companyURL: "https://www.prorail.nl",
       }
     ],
-  github: "https://github.com/IMProRail/ReSpec-template",
+  github: "https://github.com/IMProRail/rttp",
   
 
   // Create PDF or DOCX and link to file in header:
