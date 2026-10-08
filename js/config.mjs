@@ -5,17 +5,16 @@ loadRespecWithConfiguration({
   useLabel: true,
 
     //-- TODO titel is verplicht.
-  title: "Respec template",
+  title: "Real Time Traffic Plan (RTTP)",
 
   // TODO: Vul de github URL in.
   //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/IMProRail/Respec-template",
+  github: "https://github.com/IMProRail/rttp",
 
   //-- TODO shortName is verplicht! (komt in de URL: kies logische afkorting)
   //-- Regel: shortName mag geen hoofdletters bevatten.
   shortName: "rttp",
-  pubDomain: "rttp",
-  //fileName: "informatiemodel-rttp",
+  pubDomain: "rttp",  
 
   //-- TODO licentie is verplicht
   //-- "cc0" Creative Commons 0 Public Domain Dedication
@@ -31,7 +30,7 @@ loadRespecWithConfiguration({
   //-- ld: "Levend document",
   //-- //eo: "Verouderde versie",
   //-- //tg: "Teruggetrokken versie",
-  specStatus: "wv",
+  specStatus: "vv",
 
   //-- TODO type van het document is verplicht
   //-- basis: "Document",
