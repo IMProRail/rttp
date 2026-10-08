@@ -15,6 +15,7 @@ loadRespecWithConfiguration({
   //-- Regel: shortName mag geen hoofdletters bevatten.
   shortName: "rttp",
   pubDomain: "rttp",
+  //fileName: "informatiemodel-rttp",
 
   //-- TODO licentie is verplicht
   //-- "cc0" Creative Commons 0 Public Domain Dedication
