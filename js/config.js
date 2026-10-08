@@ -1,16 +1,15 @@
 import { loadRespecWithConfiguration } from "https://improrail.github.io/respec-assets/js/prorail-config.mjs";
 
 loadRespecWithConfiguration({
-  preProcess: [window.respecMermaid.createFigures],
   useLogo: true,
   useLabel: true,
-  
-  //-- TODO titel is verplicht.
-  title: "CIM RTTP",
+
+    //-- TODO titel is verplicht.
+  title: "Respec template",
 
   // TODO: Vul de github URL in.
   //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/IMProRail/rttp",
+  github: "https://github.com/IMProRail/Respec-template",
 
   //-- TODO shortName is verplicht! (komt in de URL: kies logische afkorting)
   //-- Regel: shortName mag geen hoofdletters bevatten.
@@ -51,7 +50,7 @@ loadRespecWithConfiguration({
 
   //-- publishDate is verplicht. Als je werkversie gekozen hebt  dan pakt Respec
   //-- de pushdate maar de publishDate is nog steeds verplicht.
-  publishDate: "2026-07-10", 
+  publishDate: "2026-10-07", 
 
   //-- publishVersion is verplicht. Hij mag wel leeg zijn [], maar niet de lege string zijn "".
   //publishVersion: "0.0.1",
@@ -59,33 +58,33 @@ loadRespecWithConfiguration({
  
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beide aan/uit! 
   previousPublishDate: "2026-07-10",
-  previousMaturity: "CV",
+  previousMaturity: "cv",
   //prevVersion: "0.0.1",
 
   //-- TODO: de namen van de Editor(s) / Redacteur(en)
   //-- vul in: per Editor: name:, company:, companyURL: 
   //-- companyURL moet beginnen met https://
+
+
   editors:
     [
       {
-        name: "Arnoud de Boer",
+        name: "ProRail",
         company: "ProRail",
         companyURL: "https://www.prorail.nl",
       }
     ],
-
-  //-- de namen van de auteur(s) 
-  //-- vul in: per auteur: name:, company:, companyURL: 
   authors:
     [
       {
-        name: "Arnoud de Boer",
+        name: "ProRail",
         company: "ProRail",
         companyURL: "https://www.prorail.nl",
       }
     ],
+  github: "https://github.com/IMProRail/ReSpec-template",
 
-
+  
 
   // Create PDF and link to file in header (optional):
   // TODO: Change the filename as preferred.
@@ -104,6 +103,7 @@ loadRespecWithConfiguration({
   //
   localBiblio: 
   {
+    ...organisationConfig.localBiblio,
     MIM12: {
       id: "MIM12",
       title: "MIM - Metamodel Informatie Modellering (Versie 1.2)",
@@ -113,5 +113,6 @@ loadRespecWithConfiguration({
       date: "2024-06-13"
     }
   }
-
 });
+
+
