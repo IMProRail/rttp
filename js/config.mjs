@@ -83,17 +83,20 @@ loadRespecWithConfiguration({
       }
     ],
   github: "https://github.com/IMProRail/ReSpec-template",
-
   
 
-  // Create PDF and link to file in header (optional):
-  // TODO: Change the filename as preferred.
-  //alternateFormats: [
-   //   {
-   //       label: "pdf",
-   //       uri: "static/template.pdf",
+  // Create PDF or DOCX and link to file in header:
+  // Leave 'uri' empty
+  alternateFormats: [
+      {
+         label: "pdf",
+         uri: null
+      },
+     // {
+   //      label: "docx",
+   //      uri: null
    //   },
-  // ],
+  ],
 
   //
   // Lokale lijst voor bibliografie
@@ -103,7 +106,6 @@ loadRespecWithConfiguration({
   //
   localBiblio: 
   {
-    ...organisationConfig.localBiblio,
     MIM12: {
       id: "MIM12",
       title: "MIM - Metamodel Informatie Modellering (Versie 1.2)",
