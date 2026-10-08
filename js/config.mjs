@@ -30,7 +30,7 @@ loadRespecWithConfiguration({
   //-- ld: "Levend document",
   //-- //eo: "Verouderde versie",
   //-- //tg: "Teruggetrokken versie",
-  specStatus: "vv",
+  specStatus: "wv",
 
   //-- TODO type van het document is verplicht
   //-- basis: "Document",
