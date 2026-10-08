@@ -58,8 +58,8 @@ loadRespecWithConfiguration({
  
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beide aan/uit! 
   previousPublishVersion: [],
-  previousPublishDate: "2026-07-10",
-  previousMaturity: "cv",
+  //previousPublishDate: "2026-07-10",
+  //previousMaturity: "cv",
   //prevVersion: "0.0.1",
 
   //-- TODO: de namen van de Editor(s) / Redacteur(en)
